@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY CHALLENGE</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>MEMORY GAME</h1>
+        <div class="theme-selector">
+            <button id="animal-theme" class="theme-btn">Animal Symbol</button>
+            <button id="food-theme" class="theme-btn">Food Symbol</button>
+        </div>
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Moves</div>
+                <div id="moves" class="stat-value">0</div>
+        
+
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Pairs Found</div>
+                <div id="pairs" class="stat-value">0/8</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Time</div>
+                <div id="timer" class="stat-value">00:00</div>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board"></div> 
+        
+        <div  class="controls">
+            <button id="restart-btn" class="btn">Restart Game</button>
+             <button id="reset-btn" class="btn">Reset All</button>
+        </div>
+
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Select a theme (Animal or Food) to start the game</li>
+                <li>Click on cards to flip them and find the matching pairs</li>
+                <li>Match all pairs to win the game</li>
+                <li>Try to complete the game in as few moves as possible</li>
+
+            </ul>
+        </div>
+
+      </div>
+
+      <div class="win-message" id="win-message">
+        <div class="win-content">
+            <h2>Congratulations!</h2>
+            <p>You've found all pairs!</p>
+            <p id="final-stats">Moves:0|Time:00:00</p>
+            <button id="play-again" class="btn">Play Again</button>
+        </div>
+
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
